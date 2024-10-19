@@ -1,0 +1,76 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Color change on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px;
+    height: 100vh;
+    text-align: center;
+}
+
+#home {
+    background: url('landing-image.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+#about, #services, #contact {
+    background-color: #f4f4f4;
+}
+
+/* Sticky Navbar Style on Scroll */
+.nav-scrolled {
+    background-color: #333; /* Changes navbar background when scrolled */
+}
+
+.nav-scrolled a {
+    color: #ff6347; /* Changes link color when scrolled */
+}
